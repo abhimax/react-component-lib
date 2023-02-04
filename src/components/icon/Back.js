@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "./../../styles/variables.scss";
 const Back = ({ size, color }) => {
   return (
     <svg
@@ -33,8 +32,7 @@ Back.propTypes = {
 };
 
 Back.defaultProps = {
-  //color: getComputedStyle(document.documentElement).getPropertyValue('--color-primary'),
-  color: "#ff0000",
+  color: getComputedStyle(document.documentElement).getPropertyValue('--color-primary'),
   size: 24,
 };
 

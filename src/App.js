@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Back } from './components/icon';
 
 function App() {
