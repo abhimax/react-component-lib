@@ -1,5 +1,6 @@
 import React from 'react';
 import "../Button/button.scss";
+import { Back } from '../Icon';
 import  Button  from './Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -30,8 +31,20 @@ Large.args = {
   label: 'Button',
 };
 
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+  label: 'Button',
+};
+
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+};
+
+export const Icon = Template.bind({});
+Icon.args = {
+  label: 'Button',
+  icon: <Back size={15} color="white"/>
 };

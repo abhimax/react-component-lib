@@ -7,13 +7,14 @@
     box-sizing: border-box;
     cursor: pointer;
     border: none;
+    border-radius: var(--border-radius-base);
 
     .content-wrapper {
         display: flex;
         align-items: center;
         font-size: var(--font-size-ui-button);
         svg {
-            margin-right: 1rem;
+            margin-right: 10px;
         }
     }
 
