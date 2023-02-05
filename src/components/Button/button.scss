@@ -1,0 +1,38 @@
+.ui-button{
+    display: flex;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    color: var(--white);
+    cursor: pointer;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+   }
+   
+   .content-wrapper{
+       display: flex;
+       align-items: center;
+       font-size: var(--font-size-ui-button);
+       cursor: pointer;
+   }
+   .content-wrapper svg{
+       margin-right: 1rem;
+   }
+   .ui-button.secondary{
+       background-color:rgba(0, 0, 0, .4)
+   }
+   .ui-button.secondary:hover{
+       background-color:rgba(0, 0, 0, .7)
+   }
+   
+   .primary{
+       background-color: var(--color-primary);
+   }
+   .full{
+       width: 100%;
+   }
+   .ui-button.primary:hover{
+       background-color: var(--color-primary-dark-1);
+   }
