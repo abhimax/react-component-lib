@@ -5,7 +5,8 @@ function App() {
   return (
     <div className="App">
       <Back/>
-      <Button label="Click Me!x"/>
+      <Button label="Click Me"/>
+      <Button label="Back" icon={<Back size={15} color="white"/>}/>
     </div>
   );
 }
