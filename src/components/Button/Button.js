@@ -1,13 +1,10 @@
 import PropTypes from "prop-types";
 import classes from "classnames";
-const Button = ({ label, icon, type, onClick, fitContent, ...props }) => {
+const Button = ({ label, icon, type, size, onClick, ...props }) => {
   return (
     <button
       onClick={onClick}
-      className={classes('ui-button',type)}
-    //   className={`${classes.button} ${
-    //     darkMode ? classes.secondary : classes.primary
-    //   } ${fitContent ? classes.full : null}`}
+      className={classes('ui-button',type,size)}
       {...props}
     >
       <label className="content-wrapper">
@@ -20,14 +17,11 @@ const Button = ({ label, icon, type, onClick, fitContent, ...props }) => {
 Button.propTypes = {
   label: PropTypes.string,
   icon: PropTypes.element,
-  darkMode: PropTypes.bool,
-  fitContent: PropTypes.bool,
   onClick: PropTypes.func,
 };
 Button.defaultProps = {
   label: "",
+  size:"medium",
   type: "primary",
-  darkMode: false,
-  fitContent: false,
 };
 export default Button;
