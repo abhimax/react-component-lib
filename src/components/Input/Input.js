@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
-const Input = ({ value, label, name, placeholder, type, onChange }) => (
-    <div className="form-group">
+import classes from "classnames";
+
+const Input = ({ value, label, name, placeholder, type, size, onChange }) => (
+    <div className={classes('form-group',type,size)}>
       {label && <label htmlFor="input-field">{label}</label>}
       <input
         type={type}
         value={value}
         name={name}
-        className="form-control"
+        className="form-input"
         placeholder={placeholder}
         onChange={onChange}
       />
@@ -22,6 +24,7 @@ const Input = ({ value, label, name, placeholder, type, onChange }) => (
   };
   Input.defaultProps = {
     placeholder: 'Please enter value',
-    type: 'text'
+    type: 'text',
+    size: 'medium'
   };
   export default Input;
