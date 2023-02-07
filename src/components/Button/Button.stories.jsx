@@ -1,5 +1,4 @@
 import React from 'react';
-import "../Button/button.scss";
 import { Back } from '../Icon';
 import  Button  from './Button';
 
