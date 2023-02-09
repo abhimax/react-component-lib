@@ -55,3 +55,9 @@ export const SizeSmall = Template.bind({});
 SizeSmall.args = {
   size:"small",
 };
+
+export const Error = Template.bind({});
+Error.args = {
+  name:"Name",
+  error:"Something went wrong bla bla...."
+};
