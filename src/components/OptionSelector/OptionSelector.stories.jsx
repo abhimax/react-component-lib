@@ -21,3 +21,16 @@ export const Options = Template.bind({});
 Options.args = {
   options: options,
 };
+
+export const MultiSelect = Template.bind({});
+MultiSelect.args = {
+  options: options,
+  isMulti: true
+};
+
+export const Searchable = Template.bind({});
+Searchable.args = {
+  options: options,
+  isSearchable: true
+};
+
