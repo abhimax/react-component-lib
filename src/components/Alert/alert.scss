@@ -1,0 +1,39 @@
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+
+  &.error {
+    background-color: var(--color-error);
+  }
+
+  &.success {
+    background-color: var(--color-success);
+  }
+
+  &.warning {
+    background-color: var(--color-warning);
+  }
+
+  &.info {
+    background-color: var(--color-info);
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+}
