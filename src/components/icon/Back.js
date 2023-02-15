@@ -9,8 +9,6 @@ const Back = ({ size, color }) => {
       fill={color}
     >
       <g
-        id="Arrow_Icon"
-        data-name="Arrow Icon"
         transform="translate(0 -41.674)"
       >
         <g id="Group_7" data-name="Group 7" transform="translate(0 41.674)">
