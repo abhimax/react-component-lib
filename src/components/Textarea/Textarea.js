@@ -1,32 +1,32 @@
 import PropTypes from "prop-types";
 import classes from "classnames";
 
-const Input = ({ value, label, name, placeholder, type, size, error, onChange, ...props }) => (
-    <div className={classes('form-group',type,size,{'error':error})}>
+const Textarea = ({ value, label, name, placeholder, size, error, onChange, disabled, ...props }) => (
+    <div className={classes('form-group',size,{'error':error})}>
       {label && <label htmlFor="input-field">{label}</label>}
-      <input
-        type={type}
+      <textarea
         value={value}
         name={name}
         className="form-input"
         placeholder={placeholder}
         onChange={onChange}
+        disabled={disabled}
         {...props}
       />
       { error && <p className="input-error">{error}</p>}
     </div>
   );
-  Input.propTypes = {
+  Textarea.propTypes = {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.symbol]),
     label: PropTypes.string,
     name: PropTypes.string,
     placeholder: PropTypes.string,
-    type: PropTypes.string,
     onChange: PropTypes.func,
+    disabled: PropTypes.bool,
   };
-  Input.defaultProps = {
+  Textarea.defaultProps = {
     placeholder: 'Please enter value',
-    type: 'text',
-    size: 'medium'
+    size: 'medium',
+    disabled: false,
   };
-  export default Input;
+  export default Textarea;
