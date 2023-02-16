@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { Back } from "./components/Icon";
 import Input from "./components/Input/Input";
 import { OptionSelector } from "./components/OptionSelector";
+import { Textarea } from "./components/Textarea";
 
 function App() {
   const handleClose = () => {
@@ -16,6 +17,7 @@ function App() {
       <Button label="Back" icon={<Back size={15} color="white" />} />
       <OptionSelector />
       <Alert message="test" closeAlert={handleClose} />
+      <Textarea id="txt-1"/>
     </div>
   );
 }
