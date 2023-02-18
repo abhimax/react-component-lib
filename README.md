@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# React JS UI Library
+
+## Tech stack
+
+### React, JavaScript, CSS variables, Sass, SVG
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
