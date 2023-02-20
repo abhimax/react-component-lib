@@ -1,5 +1,4 @@
 import React from "react";
-//import { Back } from "../Icon";
 import StarRating from "./StarRating";
 
 export default {
@@ -34,4 +33,5 @@ Rating3point5.args = {
 export const Rating3point8 = Template.bind({});
 Rating3point8.args = {
   rating: 3.8,
+  fillPercentage: 50,
 };
