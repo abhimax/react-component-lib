@@ -1,6 +1,6 @@
 .star-ratings {
   unicode-bidi: bidi-override;
-  color: #ccc;
+  color: var(--silver-medal);
   font-size: 64px;
   position: relative;
   margin: 0;
@@ -9,7 +9,7 @@
   width: fit-content;
 
   .fill-ratings {
-    color: #e7711b;
+    color: var(--color-warning);
     padding: 0;
     position: absolute;
     z-index: 1;
