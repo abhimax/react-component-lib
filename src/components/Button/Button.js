@@ -4,13 +4,15 @@ const Button = ({ label, icon, type, size, onClick, ...props }) => {
   return (
     <button
       onClick={onClick}
-      className={classes('ui-button',type,size)}
+      className={classes("ui-button", type, size)}
       {...props}
     >
-      <label className="content-wrapper">
-        {icon}
-        {label}
-      </label>
+      {(label || icon) && (
+        <label className="content-wrapper">
+          {icon}
+          {label}
+        </label>
+      )}
     </button>
   );
 };
@@ -20,8 +22,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
 };
 Button.defaultProps = {
-  label: "",
-  size:"medium",
+  size: "medium",
   type: "primary",
 };
 export default Button;
