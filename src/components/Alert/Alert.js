@@ -25,6 +25,7 @@ const Alert = ({ children, type, message, closeAlert }) => {
           className="close-btn"
           icon={<Cross size={15} color="white" />}
           onClick={closeAlert}
+          data-testid="close-button"
         />
       </div>
     )
