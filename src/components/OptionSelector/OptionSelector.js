@@ -13,6 +13,7 @@ const OptionSelector = ({ selectedOption, options, isMulti, isSearchable }) => {
       options={options}
       isMulti={isMulti}
       isSearchable={isSearchable}
+      placeholder={selectedOption}
     />
   );
 };
