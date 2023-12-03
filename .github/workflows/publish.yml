@@ -16,7 +16,8 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Publish
-        run: npm publish --access public
-        working-directory: react-component-lib
+        run: |
+          cd react-component-lib
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
