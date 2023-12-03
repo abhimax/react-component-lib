@@ -1,17 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/main.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export { default as Button } from "../src/components/Button/Button";
+export { default as Alert } from "../src/components/Alert/Alert";
+export { default as Input } from "../src/components/Input/Input";
+export { default as Loader } from "../src/components/Loader/Loader";
+export { default as OptionSelector } from "../src/components/OptionSelector/OptionSelector";
+export { default as StarRating } from "../src/components/StarRating/StarRating";
+export { default as Textarea } from "../src/components/Textarea/Textarea";
